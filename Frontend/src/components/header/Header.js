@@ -2,6 +2,7 @@ import {useState} from 'react'
 import { Link,NavLink } from 'react-router-dom'
 import styles from "./Header.module.scss"
 import { HiCheck, HiOutlineMenuAlt3 } from "react-icons/hi";
+import { IoNotifications } from "react-icons/io5";
 import { FaTimes } from 'react-icons/fa';
 
 
@@ -17,10 +18,9 @@ const logo = (
         </div>);
  const months = (
           <span className= {styles.months}>
-            <Link to= "/months">
-              Months
-              <HiCheck  size={20}/>
-              <p>0</p>
+            <Link to= "/notifications">
+              <IoNotifications size={20}/>
+             
             </Link>
           </span>
         );
@@ -75,7 +75,7 @@ setShowMenu(!showMenu);
 <span className = {styles.links}>
 <NavLink to="/login" className={activeLink}>Login</NavLink>
 <NavLink to="/register" className={activeLink}>Register</NavLink>
-<NavLink to="/mysavings" className={activeLink}>Mysavings</NavLink>
+<NavLink to="/dashboard" className={activeLink}>My Account</NavLink>
 </span>
 {months}
     </div>
