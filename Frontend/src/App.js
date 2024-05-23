@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 //Pages
-import {Home, Contact, Login, Register, Reset} from "./pages"
+import {Home, Contact, Login, Register, Reset, Contribute, Apply} from "./pages"
 import Dashboard from "./pages/dashboard/Dashboard";
 
 //Components
@@ -20,6 +20,8 @@ function App() {
 <Route path ="/register" element ={<Register/>} />
 <Route path ="/reset" element ={<Reset/>} />
 <Route path ="/dashboard" element ={<Dashboard/>} /> 
+<Route path ="/contribute" element ={<Contribute/>} /> 
+<Route path ="/applyloan" element ={<Apply />} /> 
  </Routes>
 <Footer/>
 </BrowserRouter>

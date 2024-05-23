@@ -20,6 +20,10 @@
       input[type="text"],
       input[type="email"],
       input[type="password"],
+      input[type="file"],
+      input[type="number"],
+      input[type="date"],
+      select,
       textarea{
         display: block;
         font-size: 1.6rem;
