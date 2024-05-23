@@ -8,7 +8,6 @@ const paypack = PaypackJs.config({
     client_id: process.env.APPLICATION_ID,
     client_secret: process.env.APPLICATION_SECRET,
 });
-console.log("--------------================-", process.env.APPLICATION_SECRET);
 export const contribute = async (req, res) => {
   try {
     const FUND = req.body;
